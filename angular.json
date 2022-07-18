@@ -3,5 +3,36 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "ngx-katex": {
+      "projectType": "library",
+      "root": "projects/ngx-katex",
+      "sourceRoot": "projects/ngx-katex/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-katex/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-katex/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-katex/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-katex/src/test.ts",
+            "tsConfig": "projects/ngx-katex/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-katex/karma.conf.js"
+          }
+        }
+      }
+    }
   }
 }

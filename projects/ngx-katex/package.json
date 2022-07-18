@@ -1,0 +1,13 @@
+{
+  "name": "ngx-katex",
+  "version": "0.0.2",
+  "peerDependencies": {
+    "@angular/common": "^14.0.0",
+    "@angular/core": "^14.0.0",
+    "katex": "^0.16.0",
+    "@types/katex": "^0.14.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
