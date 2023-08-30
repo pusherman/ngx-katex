@@ -1,5 +1,6 @@
 import { Injectable, ElementRef } from '@angular/core';
-import katex, { KatexOptions } from 'katex';
+import * as katex from 'katex';
+import { KatexOptions } from 'katex';
 
 @Injectable({
   providedIn: 'root',
