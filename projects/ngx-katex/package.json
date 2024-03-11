@@ -1,9 +1,9 @@
 {
   "name": "ngx-katex",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "peerDependencies": {
-    "@angular/common": ">=14.0.0 < 17.0.0",
-    "@angular/core": ">=14.0.0 < 17.0.0",
+    "@angular/common": ">=17.0.0 < 18.0.0",
+    "@angular/core": ">=17.0.0 < 18.0.0",
     "katex": "^0.16.0",
     "@types/katex": "^0.16.0"
   },
