@@ -37,7 +37,7 @@ Simple usage with KaTeX [options](https://katex.org/docs/options.html).
 
 ```typescript
 import { Component } from '@angular/core';
-
+import { NgxKatexComponent } from 'ngx-katex';
 import { KatexOptions } from 'ng-katex';
 
 @Component({
