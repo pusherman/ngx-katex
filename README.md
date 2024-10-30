@@ -11,33 +11,10 @@ yarn add ngx-katex katex
 yarn add --dev @types/katex
 ```
 
-Import the module
-
-```typescript
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppComponent } from './app.component';
-import { NgxKatexModule } from 'ngx-katex';
-
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    NgxKatexModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
-```
-
 Load the Katex CSS in your styles.scss
 
 ```scss
-@import '~katex/dist/katex.css';
+@import 'katex/dist/katex.css';
 ```
 
 ## Usage
@@ -46,10 +23,11 @@ Simple usage
 
 ```typescript
 import { Component } from '@angular/core';
+import { NgxKatexComponent } from 'ngx-katex';
 
 @Component({
   selector: 'my-app',
-  template: `<ng-katex [equation]="equation"></ng-katex>`
+  template: `<ngx-katex [equation]="equation"></ngx-katex>`
 })
 export class AppComponent {
   equation: string = '\\sum_{i=1}^nx_i';
@@ -64,7 +42,7 @@ import { KatexOptions } from 'ng-katex';
 
 @Component({
   selector: 'my-app',
-  template: `<ng-katex [equation]="equation" [options]="options"></ng-katex>`
+  template: `<ngx-katex [equation]="equation" [options]="options"></ngx-katex>`
 })
 export class AppComponent {
   equation: string = '\\sum_{i=1}^nx_i';
