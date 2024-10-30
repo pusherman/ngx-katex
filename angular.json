@@ -27,9 +27,11 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ngx-katex/src/test.ts",
             "tsConfig": "projects/ngx-katex/tsconfig.spec.json",
-            "karmaConfig": "projects/ngx-katex/karma.conf.js"
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
           }
         }
       }

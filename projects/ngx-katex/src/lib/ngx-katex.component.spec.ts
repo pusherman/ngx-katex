@@ -8,7 +8,7 @@ describe('NgxKatexComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NgxKatexComponent ]
+      imports: [NgxKatexComponent]
     })
     .compileComponents();
 
