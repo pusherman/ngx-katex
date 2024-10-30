@@ -1,3 +1,13 @@
+## [19.0.0] - 2024-03-11
+
+### Breaking
+
+- Changed to standalone component, removed module
+
+### Fixed
+
+- Angular 18 support fixed
+
 ## [18.0.0] - 2024-03-11
 
 ### Added
